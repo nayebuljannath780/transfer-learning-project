@@ -19,7 +19,6 @@ This directory contains the recorded implementation, report, figures, test outpu
 | Stage A and Stage B training histories (eight model–dataset pairs) | [logs/](logs/) |
 | Split and image selection manifests | [configs_and_manifests/](configs_and_manifests/) |
 | Source attribution and dataset provenance status | [datasets/dataset_sources.md](datasets/dataset_sources.md) |
-| Deliverable audit and unresolved issues | [submission_checklist.md](submission_checklist.md) |
 
 Some comparison PNGs and CSVs also occur in `Experiment_results/Assignment02_Final_Comparisons/`; `Figures/` is the figure collection intended for the report.
 
@@ -92,4 +91,4 @@ All precision, recall, and F1 values below are **macro-averaged**; AUC is **macr
 
 ## Submission audit
 
-Consult [submission_checklist.md](submission_checklist.md). The repository now includes report, notebooks, test result folders, figures, training histories and manifests. **Dataset download provenance, environment lockfile, exact replay instructions, external code attribution, and unhosted checkpoints remain unverified or incomplete.** This README deliberately does not claim the package is fully reproducible.
+The repository now includes report, notebooks, test result folders, figures, training histories and manifests. **Dataset download provenance, environment lockfile, exact replay instructions, external code attribution, and unhosted checkpoints remain unverified or incomplete.** This README deliberately does not claim the package is fully reproducible.
