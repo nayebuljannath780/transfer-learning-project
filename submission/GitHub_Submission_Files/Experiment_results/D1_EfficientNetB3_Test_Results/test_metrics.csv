@@ -1,2 +1,0 @@
-experiment,dataset,model,selected_stage,selected_epoch,test_images,accuracy,precision_macro,recall_macro,f1_macro,auc_ovr_macro
-D1_EfficientNetB3,Dataset 1,EfficientNet-B3,B,3,683,0.9882869692532943,0.9875,0.9875,0.9875,0.9992186414598372

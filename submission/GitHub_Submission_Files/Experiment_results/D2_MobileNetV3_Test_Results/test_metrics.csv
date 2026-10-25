@@ -1,2 +1,0 @@
-experiment,dataset,model,selected_stage,selected_epoch,test_images,accuracy,precision_macro,recall_macro,f1_macro,auc_ovr_macro
-D2_MobileNetV3_Large,Dataset 2,MobileNetV3-Large,B,3,214,0.9158878504672897,0.921083055863855,0.923549896049896,0.9222320177223202,0.9851303419697728
