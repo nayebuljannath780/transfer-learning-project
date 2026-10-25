@@ -1,0 +1,9 @@
+dataset,model,test_images,Accuracy,Macro precision,Macro recall,Macro F1,Macro OvR AUC
+Dataset 1,MobileNetV3-Large,683,99.71,99.76,99.65,99.71,100.0
+Dataset 1,EfficientNet-B0,683,98.54,98.49,98.44,98.46,99.89
+Dataset 1,EfficientNet-B3,683,98.83,98.75,98.75,98.75,99.92
+Dataset 1,MobileNetV2,683,97.22,97.1,97.34,97.2,99.86
+Dataset 2,MobileNetV3-Large,214,91.59,92.11,92.35,92.22,98.51
+Dataset 2,EfficientNet-B0,214,84.11,86.93,86.01,85.69,97.01
+Dataset 2,EfficientNet-B3,214,87.85,89.29,87.88,88.52,97.48
+Dataset 2,MobileNetV2,214,86.92,88.35,88.02,87.95,97.37
