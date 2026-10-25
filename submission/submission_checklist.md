@@ -1,29 +1,36 @@
-# Assignment 02 submission audit (preparation stage)
+# Assignment 02 — evidence-based submission audit
 
-Status terms: Satisfied / Partial / Unverified / Missing / Not applicable.
+Checked against professor's Assignment 02 deliverables. **Repository presence is not proof of end-to-end reproducibility or scientifically corrected data partitions.**
 
-| Professor requirement | Status | Evidence and outstanding action |
+| Deliverable | Status | Evidence / qualification |
 |---|---|---|
-| Formal technical report | Unverified | User has drafted report; final PDF not yet available in repository |
-| Complete source code | Missing | Local Kaggle notebook reported; must upload and inspect |
-| Dataset files or official links | Partial | Candidate URLs documented, original Kaggle provenance not yet verified |
-| Merged dataset preparation | Not applicable | Separate datasets, no merge |
-| Experiment configuration | Partial | Shared settings documented in README; actual saved config/files not uploaded |
-| Result tables and figures | Partial | Summary CSV added here; 12 actual PNGs still need uploading |
-| Training/testing logs | Missing | Local experiment folders reported; files not uploaded |
-| Selected-paper references | Partial | Present in Assignment 01/report; final references file not uploaded |
-| External-code and model attribution | Partial | TorchVision named; precise code/weights and attribution unverified |
-| Reproducibility README | Partial | Draft README created, but exact working commands/paths and dependencies unavailable |
+| Formal technical report | **Satisfied (file present)** | `report/Final_Report_ID22646206_Assignment_2.docx` (Word format; content and formatting not independently audited) |
+| Complete source code | **Partial** | `notebooks/assignment02-final-implementation.ipynb` and `assignment02-final-analysis.ipynb` present; no clean rerun demonstrated |
+| Datasets or official links | **Partial** | Candidate dataset publications documented; precise Kaggle source versions and selection differences unverified; raw files omitted |
+| Merged dataset preparation code | **Not applicable** | Datasets evaluated independently |
+| Experimental configuration files | **Partial** | `configs_and_manifests/` contains `dataset_splits.csv`, `retained_images.csv`, `training_eligible_images.csv`; exact weights, environment and per-run frozen config not independently recovered |
+| Result tables and figures | **Satisfied (file presence)** | `Experiment_results/` holds 8 sets of test metrics, predictions, classification reports, and confusion matrices; `Figures/` holds 12 PNGs; summary CSV exists |
+| Relevant training/testing logs | **Satisfied (file presence)** | `logs/` has Stage A and Stage B history CSVs for all 8 model-dataset pairs; test evidence in `Experiment_results/` |
+| Selected-paper references | **Partial** | Included in Word report as supplied, but references and in-text match not fully audited |
+| External-code/model acknowledgments | **Partial** | Original architecture and TorchVision cited in README; source of any adapted third-party code not fully checked |
+| Reproducibility README | **Partial** | `README.md` documents workflow and findings, but exact runnable clean-environment commands cannot yet be verified |
 
-## Additional review checks
+## Important known limitations
 
-- Verify the final submission notebook contains four official architectures and both datasets, without broken dependencies.
-- Verify actual logs and confusion matrices against the official recorded results.
-- Preserve SHA-256 and image-similarity audit evidence; avoid claims of proven leakage-free splits.
-- Verify experimental data-source selection and publication references.
-- Do not declare readiness until all mandatory rows are satisfied.
+- The report, notebook and figures should be independently cross-checked for figure labels, metric rounding and dataset naming.
+- The current edited main notebook has not passed a fresh top-to-bottom execution.
+- Checkpoint files are not hosted in this repository.
+- Dataset-source DOI matches are *candidate provenance* until original Kaggle dataset versions and reduced image counts are explained.
+- Original SHA-256 audit found 6,221 unique file hashes; image similarity investigations identified potential cross-partition lookalikes, which cannot be interpreted as confirmed duplicates nor ignored as a possible independence limitation.
 
-## Local file organization reported by user
+## Contents verified via GitHub directory inventory
 
-Local Windows path: E:\\1st Semester\\Machine Learning\\Assignment-2.
-Screenshot shows Experiment 1–8 folders, Audit Files, Dataset, Final Results, training histories ZIP, dataset_splits.csv, exact_duplicate_audit.csv, retained_images.csv and additional files. Their contents are not remotely accessible to GitHub unless uploaded.
+- Report: 1 DOCX.
+- Notebook files: 2 IPYNB.
+- Figures folder: 12 PNGs (4 comparisons and 8 learning-curve charts).
+- Experiment results: 8 separate model-dataset test result folders, class reports, confusion matrices, metrics and predictions.
+- Training logs: 16 history CSVs (2 training stages × 8 experiments).
+- Configuration/manifests: 3 CSV files.
+- `results/official_test_results.csv` and supplementary comparison outputs.
+
+**Assessment:** Organized and substantially populated; do not label as fully submission-ready until mandatory partial items are resolved or formally acknowledged.
